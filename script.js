@@ -1,51 +1,51 @@
 function multiply(){
-  var input1=document.getElementById("input1");
-  var input2=document.getElementById("input2");
-  var resultElement=document.getElementById("result");
+  let input1=document.getElementById("input1");
+  let input2=document.getElementById("input2");
+  let resultElement=document.getElementById("result");
 
-  var var1=parseFloat(input1.value);
-  var var2=parseFloat(input2.value);
+  let let1=parseFloat(input1.value);
+  let let2=parseFloat(input2.value);
 
-  var result= var1*var2;
+  let result= let1*let2;
 
   resultElement.innerHTML= result;
 }
 // console.log(123);
 function divide(){
-  var input1=document.getElementById("input1");
-  var input2=document.getElementById("input2");
-  var resultElement=document.getElementById("result");
+  let input1=document.getElementById("input1");
+  let input2=document.getElementById("input2");
+  let resultElement=document.getElementById("result");
 
-  var var1=parseFloat(input1.value);
-  var var2=parseFloat(input2.value);
+  let let1=parseFloat(input1.value);
+  let let2=parseFloat(input2.value);
 
-  var result= var1/var2;
+  let result= let1/let2;
 
   resultElement.innerHTML= result;
 }
 
 function sum(){
-  var input1=document.getElementById("input1");
-  var input2=document.getElementById("input2");
-  var resultElement=document.getElementById("result");
+  let input1=document.getElementById("input1");
+  let input2=document.getElementById("input2");
+  let resultElement=document.getElementById("result");
 
-  var var1=parseFloat(input1.value);
-  var var2=parseFloat(input2.value);
+  let let1=parseFloat(input1.value);
+  let let2=parseFloat(input2.value);
 
-  var result= var1+var2;
+  let result= let1+let2;
 
   resultElement.innerHTML= result;
 }
 
 function substract(){
-  var input1=document.getElementById("input1");
-  var input2=document.getElementById("input2");
-  var resultElement=document.getElementById("result");
+  let input1=document.getElementById("input1");
+  let input2=document.getElementById("input2");
+  let resultElement=document.getElementById("result");
 
-  var var1=parseFloat(input1.value);
-  var var2=parseFloat(input2.value);
+  let let1=parseFloat(input1.value);
+  let let2=parseFloat(input2.value);
 
-  var result= var1-var2;
+  let result= let1-let2;
 
   resultElement.innerHTML= result;
 }
@@ -55,3 +55,26 @@ function date(){
   document.getElementById("result").innerHTML=d;
 
 }
+function datetoyear()
+{
+  let input1=document.getElementById('date1').value;
+  let result=document.getElementById('result');
+
+  let mydate = new Date(input1);
+
+  let year=mydate.getFullYear();
+  document.getElementById('result').innerHTML=year;
+}
+function datetomonth()
+{
+  let input1=document.getElementById('date1').value;
+  let result=document.getElementById('result');
+
+  let mydate = new Date(input1);
+
+  let month=mydate.getMonth();
+  const months=['January','February','March','April','May','June','July'
+  ,'August','September','October','November','December'];
+  document.getElementById('result').innerHTML=months[month];
+}
+
