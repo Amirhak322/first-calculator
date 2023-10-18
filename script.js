@@ -49,3 +49,9 @@ function substract(){
 
   resultElement.innerHTML= result;
 }
+
+function date(){
+  const d=new Date();
+  document.getElementById("result").innerHTML=d;
+
+}
